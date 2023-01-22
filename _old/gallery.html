@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+    <link rel="icon" href="./assets/bootstrap/favicon.ico">
+
+    <title>VIP Produções</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/cover.css" rel="stylesheet">
+	<script type="text/javascript" src="./assets/plugins/instafeed.js"></script>
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner gallery-clearfix">
+
+        <div class="top-container">
+          <header class="masthead clearfix">		  
+            <div class="inner hd-spc-fix">
+			
+              <span class="masthead-brand"><img width="100%" height="auto" src="./assets/img/VIP.png"></span>
+			  
+			  <img class="master-globe" src="./assets/img/globe.png">
+			  
+              <nav class="nav nav-masthead">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="gallery.html">Galeria</a>
+                <a class="nav-link" href="boates.html">Boates</a>
+                <a class="nav-link" href="contact.html">Contato</a>
+              </nav>
+            </div>
+          </header>
+		</div>
+		  
+		  
+		<div class="cover-container">  
+          <main role="main" class="inner cover">
+		  
+			<div id="instafeed" class="gallery"></div>
+			
+			<script type="text/javascript"> 
+			  var feed = new Instafeed({
+			  get: 'user',
+			  userId: '44232745',
+			  accessToken: '44232745.6e4adb1.66bf3c9a09f449a9abf2b2bab0bc42ef',
+			  
+			  limit: 15,
+			  resolution: 'standard_resolution',
+			  template: '<a href="{{link}}" target="_blank"><img class="gallery-img" src="{{image}}"/></a>'});
+			  
+			  feed.run();			  
+			</script>			
+
+			<a target="_blank" class="btn btn-outline-secondary" href="https://www.instagram.com/luaaecio/">Ver mais no Intagram</a>
+          </main>
+		</div>
+
+		<div class="bot-container"> 
+          <footer class="mastfoot">
+              <p>2018 @ Vip Produções.</p>
+          </footer>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="./css_stuff/bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./assets/bootstrap/assets/js/vendor/popper.min.js"></script>
+    <script src="./assets/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
